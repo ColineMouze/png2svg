@@ -50,10 +50,10 @@ def convert_png_to_svg(input_filename, output_filename, hex_size):
 
 
     # Calculate the horizontal distance between 2 hexagons centers on the same row
-    horizontal_spacing = 1.5 * hex_size
+    horizontal_spacing = (3**0.5)* hex_size
 
     # Calculate the vertical distance between 2 rows of hexagons
-    vertical_spacing = (3**0.5) * hex_size
+    vertical_spacing = 1.5 * hex_size
 
 
     # Keep track of the row number
@@ -71,7 +71,7 @@ def convert_png_to_svg(input_filename, output_filename, hex_size):
 
         # Offset one row in two to create an hexagonal grid pattern
         if row % 2:
-            center_x_offset = 1.5 * hex_size
+            center_x_offset = 0.5 * horizontal_spacing
 
         # Set the horizontal coordinate of the first hexagon center
         center_x = center_x_offset
