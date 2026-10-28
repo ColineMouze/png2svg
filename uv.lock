@@ -360,6 +360,7 @@ name = "png2svg"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "marimo" },
     { name = "pillow" },
 ]
 
@@ -371,7 +372,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pillow", specifier = ">=12.3.0" }]
+requires-dist = [
+    { name = "marimo", specifier = ">=0.25.1" },
+    { name = "pillow", specifier = ">=12.3.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [
