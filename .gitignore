@@ -13,3 +13,8 @@ wheels/
 .pytest_cache/
 .ruff_cache/
 
+# Marimo session files
+notebooks/__marimo__/session/
+
+# Generated SVG files
+output*.svg
